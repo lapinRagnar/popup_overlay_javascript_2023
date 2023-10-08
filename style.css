@@ -39,10 +39,10 @@
   bottom: 0;
   background: #444;
   z-index: 98;
-  display: none;
+  display: none;  /* cache la valeur par défaut */
 }
 
-#popup-overlay.open {
+#popup-overlay.open { /* affichier le popup quand on clique sur le bouton */
   display: block;
 }
 
