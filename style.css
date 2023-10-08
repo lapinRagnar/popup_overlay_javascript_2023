@@ -2,8 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
+.activer-popup{
+  background: rgba(23, 39, 5, 0.744);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  padding: 50px;
+}
+
+.activer-popup h1 {
+  margin-bottom: 20px;
+}
 
 #popup-overlay {
   position: fixed;
@@ -13,6 +27,11 @@
   bottom: 0;
   background: #444;
   z-index: 98;
+  display: none;
+}
+
+#popup-overlay.open {
+  display: block;
 }
 
 .popup-content{

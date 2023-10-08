@@ -8,13 +8,18 @@
 </head>
 <body>
   
-  <h1>Salut</h1>
-  <div id="popup-overlay">
+  <div class="activer-popup">
+    <h1>Salut</h1>
+    <button onclick="togglePopup()">Activer le popup</button>
+  </div>
+
+
+  <div id="popup-overlay" class="">
     <div class="popup-content">
       <h2>Ceci est notre popup!</h2>
       <p>Salut et bienvenu sur mon site</p>
       <button class="popup-link">S'inscrire</button>
-      <button class="fermer">Fermer</button>
+      <button class="fermer" onclick="togglePopup()">Fermer</button>
     </div>
   </div>
 
