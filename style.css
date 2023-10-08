@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #444;
+  z-index: 98;
+}
+
+.popup-content{
+  max-width: 600px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 50px;
+}
+
+.fermer {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background: #444;
+  color: #fff;
+}
+
+.fermer:hover {
+  background: #fff;
+  color: #444;
+}
+
